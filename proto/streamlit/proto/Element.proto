@@ -70,6 +70,7 @@ import "streamlit/proto/Toast.proto";
 import "streamlit/proto/VegaLiteChart.proto";
 import "streamlit/proto/Video.proto";
 import "streamlit/proto/Heading.proto";
+import "streamlit/proto/BidiComponent.proto";
 
 // An element which can be displayed on the screen.
 message Element {
@@ -83,6 +84,7 @@ message Element {
     Audio audio = 13;
     AudioInput audio_input = 56;
     Balloons balloons = 12;
+    BidiComponent bidi_component = 57;
     BokehChart bokeh_chart = 17;
     Button button = 19;
     ButtonGroup button_group = 55;
@@ -132,7 +134,7 @@ message Element {
     Video video = 14;
     Heading heading = 47;
     Code code = 48;
-    // Next ID: 57
+    // Next ID: 58
   }
 
   reserved 9;
